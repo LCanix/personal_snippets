@@ -10,7 +10,7 @@ fi
 
 sleep 2
 folder_name="result_$timestamp"
-folder_path="../result_folder/$folder_name"
+folder_path="result_folder/$folder_name"
 mkdir $folder_path
 file_path="$folder_path/result.html"
 touch $file_path

@@ -27,9 +27,9 @@ def find_last_created_folder(folder_path):
     return folder_path+"/"+older_folder_name
 
 def execute():
-    process = subprocess.Popen("../sub_process/test_simulator.sh", shell=True, stdout=subprocess.PIPE)
+    process = subprocess.Popen("sub_process/test_simulator.sh", shell=True, stdout=subprocess.PIPE)
     process.wait()
-    current_result_folder = find_last_created_folder("../result_folder")
+    current_result_folder = find_last_created_folder("result_folder")
     current_result_file_path = current_result_folder+"/result.html"
     test_status = determine_result_status(current_result_file_path)
     print test_status

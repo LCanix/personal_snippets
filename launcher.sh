@@ -1,0 +1,1 @@
+python main_app/main.py && echo 'OK' || echo 'KO'
